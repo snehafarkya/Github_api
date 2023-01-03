@@ -19,8 +19,7 @@ fetch(`https://api.github.com/users/${names}`)
                      <p>Location : '${data.location}'</p>
                      <p>Twitter username : '${data.twitter_username}'</p>
                      <p>Created at : '${data.created_at}'</p>
-                     <p>Your Bio : '${data.bio}'</p>
-                     <p>Your contributions : '${data.repos_url}'</p>`
+                     <p>Your Bio : '${data.bio}'</p>`
                      
                 })
 		.catch( error => console.error(error));
