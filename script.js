@@ -17,6 +17,9 @@ fetch(`https://api.github.com/users/${names}`, {
 		.then( data => {
                     const root = document.querySelector('#root');
                     root.innerHTML = `<a href='${data.html_url}'>Name: '${data.name}'</a>
-                     <p>Followers : '${data.followers}'</p>`
+                     <p>Followers : '${data.followers}'</p>
+                     <p>Location : '${data.location}'</p>
+                     <p>Twitter username : '${data.twitter_username}'</p>
+                     <p>Created at : '${data.created_at}'</p>`
                 })
 		.catch( error => console.error(error));
