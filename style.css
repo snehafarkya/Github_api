@@ -1,0 +1,23 @@
+body{
+  /* background-color: lavender; */
+  background-image: url('https://media.istockphoto.com/id/965139598/vector/ultra-violet-white-wavy-background-ombre-pastel-gradient-abstract-cute-spring-texture-waved.jpg?s=612x612&w=0&k=20&c=qKoqJ6YAMOcyjiKrxMt7GMGSamlHp9ar4y0yq4DA4kE=');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+.card{
+  background-color: purple;
+  height: auto;
+  width: auto;
+  padding: 2em;
+  border-radius: 12px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#root,a{
+  color: aliceblue;
+  font-size: 1.2em;
+}
