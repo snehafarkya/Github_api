@@ -1,21 +1,13 @@
-
-// 
-// let a = fetch(`https://api.github.com/users/${names}`)
-
-// if(a.catch((error))){
-//   console.log("Resolved");
-// }
-// else{
-//   console.log("Valid")
-// }
-
 function sub(){
 var names = document.querySelector('input').value;
 var card = document.getElementById("card").style.display="block";
 var inp = document.querySelector('input').style.display="none";
 var inp = document.getElementById('btn').style.display="none";
 
-fetch(`https://api.github.com/users/${names}`)
+fetch(`https://api.github.com/users/${names}`, { 
+  headers: {
+       'Accept' : 'application/vnd.github.v3+json'
+   }})
 		.then(response => response.json()) //Converting the response to a JSON object
 		.then( data => {setTimeout(()=>{
 
@@ -30,5 +22,8 @@ fetch(`https://api.github.com/users/${names}`)
                      
     }) 
                 })
-		.catch( error => console.error(error));
+		.catch( (error) => {
+      console.error(error);
+
+    });
 }
