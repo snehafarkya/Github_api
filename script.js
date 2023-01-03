@@ -8,10 +8,17 @@
 // else{
 //   console.log("Valid")
 // }
-let names = prompt("Enter github username")
+
+function sub(){
+var names = document.querySelector('input').value;
+var card = document.getElementById("card").style.display="block";
+var inp = document.querySelector('input').style.display="none";
+var inp = document.getElementById('btn').style.display="none";
+
 fetch(`https://api.github.com/users/${names}`)
 		.then(response => response.json()) //Converting the response to a JSON object
-		.then( data => {
+		.then( data => {setTimeout(()=>{
+
                     const root = document.querySelector('#root');
                     root.innerHTML = `<a class='name' href='${data.html_url}'>Name: '${data.name}'</a>
                      <p>Followers : '${data.followers}'</p>
@@ -21,5 +28,7 @@ fetch(`https://api.github.com/users/${names}`)
                      <p>Created at : '${data.created_at}'</p>
                      <p>Your Bio : '${data.bio}'</p>`
                      
+    }) 
                 })
 		.catch( error => console.error(error));
+}
