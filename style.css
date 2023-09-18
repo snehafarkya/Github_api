@@ -41,5 +41,10 @@ border: 2px solid purple;
 input[type='button']{
 background-color: purple;
 color: lavender;
+}
 
+#root > button{
+  padding-block: .5rem;
+  width: 100%;
+  font-weight: bold;
 }
