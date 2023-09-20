@@ -1,6 +1,6 @@
-body{
+body {
   /* background-color: lavender; */
-  background-image: url('https://media.istockphoto.com/id/965139598/vector/ultra-violet-white-wavy-background-ombre-pastel-gradient-abstract-cute-spring-texture-waved.jpg?s=612x612&w=0&k=20&c=qKoqJ6YAMOcyjiKrxMt7GMGSamlHp9ar4y0yq4DA4kE=');
+  background-image: url("https://media.istockphoto.com/id/965139598/vector/ultra-violet-white-wavy-background-ombre-pastel-gradient-abstract-cute-spring-texture-waved.jpg?s=612x612&w=0&k=20&c=qKoqJ6YAMOcyjiKrxMt7GMGSamlHp9ar4y0yq4DA4kE=");
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,8 @@ body{
   gap: 1em;
   overflow: hidden;
 }
-.card,#card{
+.card,
+#card {
   background-color: purple;
   height: auto;
   width: auto;
@@ -19,32 +20,50 @@ body{
   border: none;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   display: none;
-
 }
-#root,a{
+#root,
+a {
   color: aliceblue;
   font-size: 1.2em;
+  text-align: center;
 }
-input[type='text'],input[type='button']{
+a {
+  text-decoration: none;
+  font-size: 2.8rem;
+  text-shadow: 4px 4px 2px rgba(255, 248, 248, 0.212);
+  cursor: default;
+}
+input[type="text"],
+input[type="button"] {
   font-size: 1.2em;
   outline: none;
-  border: none;
   background-color: transparent;
-  border-radius: 6px;
+  border-radius: 5px;
   padding: 1em;
   text-align: center;
-
+  border: 2px solid lavender;
 }
-input[type='text']:hover{
-border: 2px solid purple;
-}
-input[type='button']{
-background-color: purple;
-color: lavender;
+input[type="text"]:hover {
+  border: 2px solid purple;
+  transition: all 0.6s ease-in-out;
 }
 
-#root > button{
-  padding-block: .5rem;
+input[type="button"] {
+  background-color: purple;
+  color: lavender;
+  padding: 0.6rem 3rem;
+  border: 2px solid purple;
+  box-shadow: rgba(0, 0, 0, 0.137) 0px 10px 20px, rgba(0, 0, 0, 0.185) 0px 6px 6px;
+  cursor: pointer;
+}
+
+#root > button {
+  padding-block: 0.5rem;
   width: 100%;
   font-weight: bold;
+  color: purple;
+  border-radius: 5px;
+  border: 2px solid lavender;
+  box-shadow: rgba(255, 255, 255, 0.39) 0px 5px 15px;
+  cursor: pointer;
 }
