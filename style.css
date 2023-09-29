@@ -43,9 +43,14 @@ input[type="button"] {
   text-align: center;
   border: 2px solid lavender;
 }
+input[type="text"]{
+  color: white;
+}
 input[type="text"]:hover {
   border: 2px solid purple;
   transition: all 0.6s ease-in-out;
+  background: white;
+  
 }
 
 input[type="button"] {
