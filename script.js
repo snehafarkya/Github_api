@@ -25,7 +25,7 @@ function sub() {
                      <p>Location : '${data.location}'</p>
                      <p>Twitter username : '${data.twitter_username}'</p>
                      <p>Repositories : '${data.public_repos}'</p>
-                     <button class="btn" onclick="removeCard()">Go back</button>`
+                     <button class="btn" onclick="removeCard()">Go Back </button>`
 
       })
     })
