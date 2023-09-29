@@ -67,3 +67,12 @@ input[type="button"] {
   box-shadow: rgba(255, 255, 255, 0.39) 0px 5px 15px;
   cursor: pointer;
 }
+.image{
+  border-radius: 50% ;
+  border: 1px solid transparent;
+}
+
+.image:hover{
+  transition: all ease-in-out 0.5s;
+  transform: scale(1.1);
+}
