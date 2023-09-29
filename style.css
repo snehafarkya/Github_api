@@ -56,7 +56,12 @@ input[type="button"] {
   box-shadow: rgba(0, 0, 0, 0.137) 0px 10px 20px, rgba(0, 0, 0, 0.185) 0px 6px 6px;
   cursor: pointer;
 }
-
+input[type="button"]:hover{
+  background: white;
+  color: purple;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.03);
+} 
 #root > button {
   padding-block: 0.5rem;
   width: 100%;
