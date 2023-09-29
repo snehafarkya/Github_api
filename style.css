@@ -50,7 +50,7 @@ input[type="text"]:hover {
   border: 2px solid purple;
   transition: all 0.6s ease-in-out;
   background: white;
-  
+  color: black;
 }
 
 input[type="button"] {
