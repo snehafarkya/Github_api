@@ -19,7 +19,7 @@ function sub() {
         const root = document.querySelector('#root');
         root.innerHTML = `<p> <img src='${data.avatar_url}' height="200px" class="image" /></p>
                      <a class='name' href='${data.html_url}'>Name: '${data.name}'</a>
-                     <p>Your Bio : '${data.bio}'</p>
+                     <p>Bio : '${data.bio}'</p>
                      <p>Followers : '${data.followers}'</p>
                      <p>Following : '${data.following}'</p>
                      <p>Location : '${data.location}'</p>
