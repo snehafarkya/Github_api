@@ -68,7 +68,7 @@ input[type="button"]:hover{
   transform: scale(1.03);
 } 
 #root > button {
-  padding-block: 0.5rem;
+  padding:12px 16px;
   width: fit-content;
   font-weight: bold;
   color: purple;
