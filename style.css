@@ -69,7 +69,7 @@ input[type="button"]:hover{
 } 
 #root > button {
   padding-block: 0.5rem;
-  width: 100%;
+  width: fit-content;
   font-weight: bold;
   color: purple;
   border-radius: 5px;
