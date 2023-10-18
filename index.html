@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
+@@ -5,19 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Github Wrapup</title>
-  <link rel="icon" href="https://qph.cf2.quoracdn.net/main-qimg-729a22aba98d1235fdce4883accaf81e" type="image/icon type">
+  <title>Document</title>
  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <style>
-  
+
 </style>
 <body>
-  <input type="text" name="txt" id="txt" placeholder="Enter Github UserName">
+  <input type="text" name="txt" id="txt" placeholder="Enter github username">
+  <input type="text" name="txt" id="txt" placeholder="Enter GitHub username">
   <input type="button" value="Submit" onclick="sub()" id="btn">
   <div class="card" id="card">
   <div id="root"> </div>
@@ -20,5 +18,76 @@
 </div>
 <script src="./script.js"></script>
 
+    <div id="root"></div>
+  </div>
+  <script src="./script.js"></script>
 </body>
 </html>
+</html>
+  37 changes: 21 additions & 16 deletions37  
+style.css
+@@ -1,5 +1,5 @@
+body{
+  /* background-color: lavender; */
+
+body {
+  background-image: url('https://media.istockphoto.com/id/965139598/vector/ultra-violet-white-wavy-background-ombre-pastel-gradient-abstract-cute-spring-texture-waved.jpg?s=612x612&w=0&k=20&c=qKoqJ6YAMOcyjiKrxMt7GMGSamlHp9ar4y0yq4DA4kE=');
+  display: flex;
+  flex-direction: column;
+@@ -9,37 +9,42 @@ body{
+  height: 100vh;
+  gap: 1em;
+  overflow: hidden;
+  margin: 0; /* Remove margin to avoid white space */
+}
+.card,#card{
+
+.card {
+  background-color: purple;
+  height: auto;
+  width: auto;
+  max-width: 400px; /* Limit card width for readability */
+  padding: 2em;
+  border-radius: 12px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  display: none;
+
+  text-align: center; /* Center card content */
+  color: lavender; /* Text color for card content */
+}
+#root,a{
+  color: aliceblue;
+
+#root, a {
+  font-size: 1.2em;
+  text-decoration: none; /* Remove underline from links */
+}
+input[type='text'],input[type='button']{
+
+input[type='text'], input[type='button'] {
+  font-size: 1.2em;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 1em;
+  text-align: center;
+
+  color: lavender; /* Text color for input elements */
+}
+input[type='text']:hover{
+border: 2px solid purple;
+
+input[type='text']:hover {
+  border: 2px solid purple;
+}
+input[type='button']{
+background-color: purple;
+color: lavender;
+
+input[type='button'] {
+  background-color: purple;
+  color: lavender;
+  cursor: pointer; /* Add pointer cursor to button for usability */
+}
